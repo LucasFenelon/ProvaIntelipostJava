@@ -1,0 +1,31 @@
+Teste2NovoSistemaDeLogin\LoginService\target
+
+# IDEs #
+###################
+/**/generated
+/**/.settings
+/**/.project
+/**/.classpath
+/**/.rebel.xml
+/**/lib
+/**/bin
+/**/.metadata
+/.settings/
+/.metadata/
+/.idea
+/.vscode
+.metadata/
+/lib/
+/bin/
+*.iml
+*.bak
+*/nb-configuration.xml
+nbactions.xml
+RemoteSystemsTempFiles
+RemoteSystemsTempFiles/*
+RemoteSystemsTempFiles/.project
+
+# Compiled source #
+###################
+*.com
+*.class
