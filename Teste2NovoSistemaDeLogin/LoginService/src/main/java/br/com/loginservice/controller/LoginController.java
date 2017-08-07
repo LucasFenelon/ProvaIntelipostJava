@@ -24,16 +24,7 @@ public class LoginController {
 	LoginService serviceLogin;
 	
 	@RequestMapping(method=RequestMethod.GET, value="/")
-	public ModelAndView loginBarra() throws RestClientResponseException{
-		return login();
-	}
-	
-//	@RequestMapping(method=RequestMethod.GET, value="/index")
-//	public ModelAndView loginIndex() throws RestClientResponseException{
-//		return login();
-//	}
-	
-	public ModelAndView login(){
+	public ModelAndView login() throws RestClientResponseException{
 		log.info("method login - init");
 		ModelAndView view = new ModelAndView("index");
 		

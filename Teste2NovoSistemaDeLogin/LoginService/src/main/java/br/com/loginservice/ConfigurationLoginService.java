@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ConfigurationLoginService {
 
 	public static void main(String[] args) {
-		System.getProperties().put("server.port", 8090);
+		System.getProperties().put("server.port", 8080);
 		SpringApplication.run(ConfigurationLoginService.class, args);
 	}
 }
