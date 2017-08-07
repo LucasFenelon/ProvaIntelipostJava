@@ -1,7 +1,7 @@
 package br.com.loginservice.controller.rest;
 
-//import org.slf4j.Logger;
-//import org.slf4j.impl.Log4jLoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.impl.Log4jLoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -15,7 +15,7 @@ import br.com.loginservice.model.Login;
 import br.com.loginservice.service.LoginService;
 
 public class LoginController {
-//	Logger log = new Log4jLoggerFactory().getLogger(LoginController.class.toString());
+	Logger log = new Log4jLoggerFactory().getLogger(LoginController.class.toString());
 	
 	@Autowired
 	LoginService serviceLogin;
@@ -26,8 +26,8 @@ public class LoginController {
 		try{
 			return new ResponseEntity<Login>(serviceLogin.logIn(userLogin), HttpStatus.CREATED);
 		}catch (Exception e) {
-//			log.error(e.getMessage());
-//			log.error(e.getStackTrace().toString());
+			log.error(e.getMessage());
+			log.error(e.getStackTrace().toString());
 			throw new RestClientResponseException(e.getMessage(), 500, null, null, new byte[0], null);
 		}
 	}
